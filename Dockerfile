@@ -1,6 +1,6 @@
-FROM rancher/cli:v2.0.4
+FROM rancher/cli2
 
-ENV KUBERNETES_VERSION=v1.12.4
+ENV KUBERNETES_VERSION=v1.16.3
 
 RUN apk --update --no-cache add curl gettext \
     && curl -LO https://storage.googleapis.com/kubernetes-release/release/$KUBERNETES_VERSION/bin/linux/amd64/kubectl \
